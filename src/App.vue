@@ -1,8 +1,9 @@
 <template>
-<div>
-  <h3>Main App</h3>
-  <Content />
-</div>
+  <div class="main">
+    <h3>EMP Vue2 App</h3>
+    <img src="./logo.png" />
+    <Content />
+  </div>
 </template>
 
 <script>
@@ -15,6 +16,10 @@ export default {
 </script>
 
 <style scoped>
+.main {
+  text-align: center;
+}
+
 img {
   width: 200px;
 }

@@ -1040,6 +1040,14 @@
     fs-extra "^9.0.0"
     npm-dts "^1.3.0"
 
+"@efox/emp-vue2@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@efox/emp-vue2/-/emp-vue2-1.0.0.tgz#0f309f5f2d8899a8966b53b954b37df628c1322b"
+  integrity sha512-SZ63H2tz2ylVH1+1yNMuhUkFPJQli9JUbwvKNt/pL13aKQPrOCb6OVJLiLgpLTbOfEmJ8GKYqwtTtjglSSEb6w==
+  dependencies:
+    vue-loader "^15.9.5"
+    vue-template-compiler "^2.6.12"
+
 "@eslint/eslintrc@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.2.1.tgz#f72069c330461a06684d119384435e12a5d76e3c"
