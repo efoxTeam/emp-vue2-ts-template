@@ -1,0 +1,10 @@
+{
+  "name": "vue2Components",
+  "remotes": {
+    "vue2Components": "vue2Components"
+  },
+  "exposes": {
+    "./Content.vue": "./src/components/Content"
+  },
+  "shared": ["vue/dist/vue.esm.js"]
+}
