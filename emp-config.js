@@ -17,10 +17,6 @@ module.exports = withVue2(({ config, env, empEnv }) => {
       ...args[0],
       ...{
         ...empConfig,
-        // 项目名称
-        name: empConfig.name,
-        // 暴露项目的全局变量名
-        library: { type: 'var', name: empConfig.name },
         // 被远程引入的文件名
         filename: 'emp.js',
       },
