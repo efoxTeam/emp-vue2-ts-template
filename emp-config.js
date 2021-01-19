@@ -2,7 +2,6 @@ const withVue2 = require('@efox/emp-vue2')
 const path = require('path')
 const ProjectRootPath = path.resolve('./')
 const { getConfig } = require(path.join(ProjectRootPath, './src/config'))
-const empConfig = require(`${resolveApp('')}/emp.json`);
 module.exports = withVue2(({ config, env, empEnv }) => {
   const confEnv = env === 'production' ? 'prod' : 'dev'
   const conf = getConfig(empEnv || confEnv)
@@ -16,7 +15,14 @@ module.exports = withVue2(({ config, env, empEnv }) => {
     args[0] = {
       ...args[0],
       ...{
-        ...empConfig,
+        name: "vue2Components",
+        remotes: {
+          "vue2Components": "vue2Components"
+        },
+        exposes: {
+          "./Content.vue": "./src/components/Content"
+        },
+        shared: ["vue/dist/vue.esm.js"],
         // 被远程引入的文件名
         filename: 'emp.js',
       },
