@@ -1,13 +1,13 @@
-# EMP Vue2 模板工程
+# EMP Vue2 Ts 模板工程
 
 ## 安装依赖:
 
- `yarn`
+`yarn`
 
-## 启动项目: 
+## 启动项目:
 
- `yarn dev`
+`yarn dev`
 
 ## 打包生产环境
 
- `yarn build`
+`yarn build`
